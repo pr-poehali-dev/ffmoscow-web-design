@@ -27,7 +27,7 @@ const Index = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-blue-50 to-white py-20 md:py-32">
+      <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50 py-20 md:py-32">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
@@ -38,12 +38,12 @@ const Index = () => {
               Полный цикл обработки заказов: от хранения товаров на складе до доставки покупателям. 
               Интеграция с личными кабинетами маркетплейсов.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-fade-in">
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg transition-all duration-300 hover:scale-105">
                 <Icon name="MessageCircle" size={20} className="mr-2" />
                 Оставить заявку
               </Button>
-              <Button size="lg" variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-4 text-lg">
+              <Button size="lg" variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-4 text-lg transition-all duration-300 hover:scale-105">
                 <Icon name="Calculator" size={20} className="mr-2" />
                 Рассчитать стоимость
               </Button>
@@ -88,10 +88,10 @@ const Index = () => {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Card className="text-center border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 animate-slide-up">
+            <Card className="text-center border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 hover:scale-105 group">
               <CardHeader>
-                <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-4 transition-transform duration-300 group-hover:scale-110">
                   <Icon name="Package" size={32} className="text-blue-600" />
                 </div>
                 <CardTitle className="text-xl">Хранение</CardTitle>
@@ -103,7 +103,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="text-center border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <Card className="text-center border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 hover:scale-105 group">
               <CardHeader>
                 <div className="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <Icon name="Gift" size={32} className="text-purple-600" />
@@ -117,7 +117,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="text-center border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <Card className="text-center border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 hover:scale-105 group">
               <CardHeader>
                 <div className="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <Icon name="Truck" size={32} className="text-green-600" />
@@ -131,7 +131,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="text-center border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <Card className="text-center border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 hover:scale-105 group">
               <CardHeader>
                 <div className="w-16 h-16 bg-orange-100 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <Icon name="Link" size={32} className="text-orange-600" />
@@ -152,7 +152,7 @@ const Index = () => {
       <section id="about" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
+            <div className="animate-fade-in">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
                 Почему выбирают FFMoscow
               </h2>
@@ -189,7 +189,7 @@ const Index = () => {
               </div>
             </div>
             
-            <div className="relative">
+            <div className="relative animate-slide-up">
               <div className="rounded-2xl overflow-hidden shadow-2xl">
                 <img 
                   src="/img/7c5bc8e1-9f80-4303-92d3-b8ee494a8336.jpg" 
